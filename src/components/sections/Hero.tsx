@@ -36,7 +36,7 @@ export function Hero() {
       <motion.div style={{ y: yText, opacity: fade }} className="mx-auto grid w-full max-w-content items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.35fr_1fr]">
         <div>
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="eyebrow flex items-center gap-3">
-            <span className="h-px w-10 bg-gradient-to-r from-electric to-violet" /> Portfolio · {new Date().getFullYear()}
+            <span className="h-px w-10 bg-gradient-to-r from-electric to-violet" /> Portfolio
           </motion.p>
 
           <h1 className="mt-6 font-display text-[2.6rem] font-semibold leading-[0.95] tracking-tight sm:text-7xl lg:text-[5.4rem]">
