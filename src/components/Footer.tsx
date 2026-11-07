@@ -1,5 +1,5 @@
 import { nav, profile } from "@/content/site";
-import { GitHubIcon, LinkedInIcon } from "./ui/Brand";
+import { GitHubIcon, LinkedInIcon, MediumIcon } from "./ui/Brand";
 
 export function Footer() {
   return (
@@ -15,6 +15,7 @@ export function Footer() {
         <div className="flex items-center gap-3 text-muted">
           <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="focus-ring grid h-10 w-10 place-items-center rounded-full glass hover:text-fg"><LinkedInIcon /></a>
           {profile.github && <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="focus-ring grid h-10 w-10 place-items-center rounded-full glass hover:text-fg"><GitHubIcon /></a>}
+          {profile.medium && <a href={profile.medium} target="_blank" rel="noopener noreferrer" aria-label="Medium" className="focus-ring grid h-10 w-10 place-items-center rounded-full glass hover:text-fg"><MediumIcon /></a>}
         </div>
       </div>
       <p className="pb-8 text-center text-xs text-muted/70">© {new Date().getFullYear()} {profile.name}. Built with Next.js.</p>

@@ -2,7 +2,7 @@
 import { ArrowUpRight, CheckCircle2, FileDown, Loader2, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { profile } from "@/content/site";
-import { GitHubIcon, LinkedInIcon } from "../ui/Brand";
+import { GitHubIcon, LinkedInIcon, MediumIcon } from "../ui/Brand";
 import { Reveal } from "../ui/Reveal";
 import { SectionHeading } from "../ui/SectionHeading";
 
@@ -60,6 +60,7 @@ export function Contact() {
     { label: "Email", value: profile.email, href: `mailto:${profile.email}`, Icon: Mail },
     { label: "LinkedIn", value: "trinadha-kumar-achanta", href: profile.linkedin, Icon: LinkedInIcon },
     ...(profile.github ? [{ label: "GitHub", value: profile.github.replace("https://github.com/", "@"), href: profile.github, Icon: GitHubIcon }] : []),
+    ...(profile.medium ? [{ label: "Medium", value: profile.medium.replace("https://medium.com/", ""), href: profile.medium, Icon: MediumIcon }] : []),
     profile.resumeUrl
       ? { label: "Resume", value: "Download PDF", href: profile.resumeUrl, Icon: FileDown }
       : { label: "Resume", value: "Request by email", href: `mailto:${profile.email}?subject=${encodeURIComponent("Resume request")}`, Icon: FileDown },

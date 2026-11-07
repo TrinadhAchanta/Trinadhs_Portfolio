@@ -28,8 +28,8 @@ export const profile = {
   location: "Massachusetts, USA",
   email: "trinadh.eng@gmail.com",
   linkedin: "https://www.linkedin.com/in/trinadha-kumar-achanta-ab6442220",
-  /** TODO: add GitHub profile URL once confirmed, e.g. "https://github.com/username" */
   github: "https://github.com/TrinadhAchanta" as string | null,
+  medium: "https://medium.com/@atrinadhachanta" as string | null,
   /**
    * Path of the downloadable resume inside /public (e.g. "/resume.pdf").
    * Kept null until Tri approves which version (the original contains a phone number).

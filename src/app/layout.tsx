@@ -37,7 +37,7 @@ const jsonLd = {
   url: profile.siteUrl,
   image: `${profile.siteUrl}${profile.portrait ?? ""}`,
   email: `mailto:${profile.email}`,
-  sameAs: [profile.linkedin, profile.github].filter(Boolean),
+  sameAs: [profile.linkedin, profile.github, profile.medium].filter(Boolean),
   worksFor: { "@type": "Organization", name: "CVS Caremark" },
   alumniOf: [
     { "@type": "CollegeOrUniversity", name: "New England College" },

@@ -4,7 +4,7 @@ import { ArrowDown, ArrowRight, FileDown, Mail, MapPin } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { profile } from "@/content/site";
 import { NeuralField } from "../ui/NeuralField";
-import { GitHubIcon, LinkedInIcon } from "../ui/Brand";
+import { GitHubIcon, LinkedInIcon, MediumIcon } from "../ui/Brand";
 import { Tilt } from "../ui/Tilt";
 import { PhotoSlot } from "../ui/PhotoSlot";
 
@@ -83,6 +83,7 @@ export function Hero() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="mt-8 flex items-center gap-4 text-sm text-muted">
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="focus-ring inline-flex items-center gap-2 rounded hover:text-fg"><LinkedInIcon /> LinkedIn</a>
             {profile.github && <a href={profile.github} target="_blank" rel="noopener noreferrer" className="focus-ring inline-flex items-center gap-2 rounded hover:text-fg"><GitHubIcon /> GitHub</a>}
+            {profile.medium && <a href={profile.medium} target="_blank" rel="noopener noreferrer" className="focus-ring inline-flex items-center gap-2 rounded hover:text-fg"><MediumIcon /> Medium</a>}
             <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> {profile.location}</span>
           </motion.div>
         </div>
